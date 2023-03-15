@@ -53,9 +53,21 @@
                   <li>el1</li>
                   <li>el2</li>
                </ul>
-               <p>Par1.</p>
+               <p>In this tutorial I will go over from specicific tutorial notebook "manipulator control" from chapter 8 of Robotic Manipulation course. It is the simplified version of this notebook. The reason why I choose notebook is, becasue I think it is better to understand the simulation with practical application and this one is a good example for starting.
+
+The aim of the simulation is to manipulate simple box in 2D with point finger with using inverse dynamics controller, which is same in this case with using the joint stiffness controller. In the first part of simulation, we import the necessary libraries. So let's start with this part.
+
+AddMultibodyPlantSceneGraph: it is used to set up a simulation environment for a robotic system. "MultibodyPlant" object, which represents the physical properties of the robotic system, and a "SceneGraph" object, which represents the visual properties of the system.
+The MultibodyPlant object is used to define the dynamics and kinematics of the robotic system, including the mass properties, joint types, joint limits, and contact models. It also provides methods for computing the forward and inverse kinematics and dynamics of the system, which are necessary for simulating the motion of the system.
+The SceneGraph object, on the other hand, is used to define the visual properties of the system, including the shapes and colors of the robot and any objects in its environment. It provides methods for visualizing the motion of the system during simulation, including rendering images and videos of the simulation.
+So basically, AddMultibodyPlantSceneGraph combine the physical and visual properties of the system and simulates the motion of the system and visualize its behavior. 
+
+Parser:a parser is a software module that reads in a description of a robot or system and creates a corresponding model that can be used for simulation or control. The input to the parser is typically a file in a specific format that describes the geometry, kinematics, dynamics, and other properties of the system.</p>
                <hr>
-               <p>Par2.</p>
+               <p>A MultibodyPlant to represent the robot and its environment
+A SceneGraph to represent the 3D scene and provide visualization capabilities
+An InverseDynamicsController to compute joint torques based on desired joint positions and stiffness parameters
+A TrajectorySource to generate a desired joint position trajectory for the robot to follow</p>
                <blockquote> quote1. —BC </blockquote>
                <p>Par3.</p>
             </article>
